@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/zooListFragment">
+
+    <fragment
+        android:id="@+id/zooListFragment"
+        android:name="com.kanneki.opentaipei.ui.zoolist.ZooListFragment"
+        android:label="ZooListFragment"
+        tool:layout="@layout/fragment_zoolist">
+        <action
+            android:id="@+id/action_zooListFragment_to_zooDetailFragment"
+            app:destination="@id/zooDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/zooDetailFragment"
+        android:name="com.kanneki.opentaipei.ui.zoodetail.ZooDetailFragment"
+        android:label="ZooDetailFragment"
+        tool:layout="@layout/fragment_zoo_detail">
+        <action
+            android:id="@+id/action_zooDetailFragment_to_plantDetailFragment"
+            app:destination="@id/plantDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/plantDetailFragment"
+        android:name="com.kanneki.opentaipei.ui.plantdetail.PlantDetailFragment"
+        android:label="PlantDetailFragment"
+        tool:layout="@layout/fragment_plant_detail"/>
+</navigation>

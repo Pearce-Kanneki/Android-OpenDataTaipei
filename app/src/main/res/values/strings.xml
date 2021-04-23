@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Open Taipei</string>
+    <string name="plantRecyclerViewTitle">植物資料</string>
+    <string name="zooTextView">台北市立動物園</string>
+    <string name="zooMemoNullText">無休館資訊</string>
+    <string name="goWebView">在網頁中開啟</string>
+    <string name="noInternet">無法連到網路</string>
+
+    <string-array name="showTextList">
+        <item>別名</item>
+        <item>簡介</item>
+        <item>辨認方式</item>
+        <item>功能性</item>
+    </string-array>
+</resources>
